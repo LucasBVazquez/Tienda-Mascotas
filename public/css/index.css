@@ -1,0 +1,129 @@
+:root{
+    --main-background: #FF6600;
+    --rojo: #FF0000;
+    --Turquesa: #66CCCC;
+    --GrisClaro: #F0F0F0;
+    --Beige: #CC9966;
+    --Dorado: #FFCC00;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*header*/
+
+.heder-div{
+    background-color: var(--Turquesa);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+}
+
+.accesosCyR{
+    display: flex;
+    padding: 20px 0 20px;
+    margin-left: 110px;
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+}
+
+.accesosCyR p{
+    display: none;
+}
+
+.fa-cart-shopping{
+    margin: 10px
+}
+
+.fa-circle-user{
+   margin: 10px;
+}
+
+
+.form-search{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    border: 5px;
+    border-radius: 80%;
+}
+.form-search input{
+    width: 90%;
+}
+
+
+/*Barra de navegacion*/
+.barra-nav{
+    background-color: var(--main-background);
+    height: 48px;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.checkbox,.icono{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 170px;
+    cursor: pointer;
+}
+
+.icono{
+    pointer-events: none;
+    font-size: 26px;
+}
+
+.fa-x{
+    display: none;
+}
+
+.checkbox{
+    opacity: 0;
+}
+
+.checkbox:checked ~ .fa-bars{
+    display:none
+}
+
+.checkbox:checked ~ .fa-x{
+    display: block;
+}
+
+/*menu-nav*/
+.menu-nav{
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    top:-250px;
+    z-index: -1;
+    left: 0px;
+    transition: 300ms;
+}
+
+.menu-nav li a{
+    text-decoration: none;
+    color: var(--GrisClaro);
+    background-color: var(--main-background);
+    display: block;
+    border-bottom:2px solid black;
+    padding: 10px;
+}
+
+.menu-nav a:hover{
+    background-color: var(--Turquesa);
+}
+
+.checkbox:checked ~ .menu-nav{
+    top: 40px;
+}
+/*header*/
+

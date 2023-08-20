@@ -13,26 +13,45 @@
 <body>
     <!-- Haciendo el header-->
     <header class="heder-P">
-        <div class="div-heder">
-            <img src="/img/Logo.png" alt="Logo">
-        </div>
+        <div class="heder-div">
+            <img src="/img/Logo.png" alt="Logo" class="logo">
 
-        <form class="search-flex"  action="/buscar" method="POST">
-        
-            <input class="search" type="text" name="buscar" placeholder="Buscar...">
-            <button class="botton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-
-        <ul class="nav-principal">
+        <!--CARRITO Y REGISTER-->
+        <ul class="accesosCyR">
             <li>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i><p>Carrito de compras</p></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i><p class="Carrito">Carrito</p></a>
             </li>
             <li>
                 <a href="#"><i class="fa-regular fa-circle-user"></i><p class="ingresar">Ingresar</p></a>
             </li>
         </ul>
+        <!--CARRITO Y REGISTER-->
 
+        <!--Barra de busqueda-->
+        <form class="form-search"  action="/buscar" method="POST">
+            <input class="search" type="text" name="buscar" placeholder="Buscar...">
+            <button class="boton1" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <!--Barra de busqueda-->
+    </div>
+
+        <!-- Barra de navegacion-->
+        <nav class="barra-nav">
+            <input class="checkbox" type="checkbox">
+            <i class="icono fas fa-bars"></i>
+            <i class="icono fa-solid fa-x"></i>
+
+            <ul class="menu-nav">
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Seguimiento</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- FIn del header-->
+    <!--Inicando el main-->
+    <main>
+    </main>
 </body>
 </html>
